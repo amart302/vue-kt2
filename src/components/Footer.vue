@@ -26,6 +26,7 @@
         padding-inline: 10px;
         display: flex;
         justify-content: center;
+        margin-top: 60px;
     }
     .footer-container{
         width: 260px;

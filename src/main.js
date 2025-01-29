@@ -2,10 +2,10 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from './components/Home.vue'
-import Users from './components/Users.vue'
-import Profile from './components/Profile.vue'
-import Login from './components/Login.vue'
+import Profile from './pages/Profile.vue'
+import Home from './pages/Home.vue'
+import Users from './pages/Users.vue'
+import Login from './pages/Login.vue'
 
 const router = createRouter({
     routes: [
