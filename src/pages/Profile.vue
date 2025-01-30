@@ -31,11 +31,13 @@ import axios from 'axios';
         },
         methods: {
             redirectToLogin(){
-                if(!this.token){
-                    this.$router.push({ path: "/login" });
-                }else{
-                    this.getUserData();
-                }
+                setTimeout(() => {
+                    if(!this.token){
+                        this.$router.push({ path: "/login" });
+                    }else{
+                        this.getUserData();
+                    }
+                }, 400)
             },
             async getUserData(){
                 try {
