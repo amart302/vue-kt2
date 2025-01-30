@@ -7,7 +7,7 @@
                 sint. Velit officia consequat duis enim velit mollit. Exercitation veniam<br>
                 consequat sunt nostrud amet.
             </p>
-            <button>Authorization</button>
+            <button @click="redirectToLogin()">Authorization</button>
         </div>
         <img src="../assets/images/tools.png" alt="">
     </main>
@@ -15,7 +15,11 @@
 
 <script>
     export default {
-        
+        methods: {
+            redirectToLogin(){
+                this.$router.push({ path: "/login" });
+            }
+        }
     }
 </script>
 

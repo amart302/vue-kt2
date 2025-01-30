@@ -55,6 +55,7 @@ import axios from 'axios';
     main{
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     form{
         width: 350px;
